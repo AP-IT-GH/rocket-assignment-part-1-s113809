@@ -5,11 +5,13 @@ using UnityEngine;
 public class particle_script_en : MonoBehaviour
 {
     [SerializeField] private ParticleSystem ps;
+
+    
     bool thrust = false;
     // Start is called before the first frame update
     void Start()
     {
-        ps.Clear();
+        
     }
 
     // Update is called once per frame
@@ -22,8 +24,13 @@ public class particle_script_en : MonoBehaviour
         if (thrust)
         {
             ps.Play();
+            
+
+
         }
-        else { ps.Clear();}
+        else { ps.Clear();
+           
+        }
         
     }
     
